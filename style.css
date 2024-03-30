@@ -6,22 +6,27 @@ h1{
 	text-align: center;
 	font-size: 50px;
 	color: white;
-	background-color: black;
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 p{
 	text-align: center;
-	font-size: 35px;
+	font-size: 20px;
 	color: white;
-	background-color: black;
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 h2{
 	font-size: 50px;
 	color: white;
-	background-color: black;
-	text-align: center;
-}
-body{
-	background-color: black;
+	text-align: center;font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 li{
 	color: white;
@@ -31,13 +36,136 @@ h3{
 	color: white;
 	font-size: 40px;
 	text-align: center;
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 h4{
 	color: white;
 	font-size: 40px;
 	text-align: center;
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 h5{
 	color: white;
 	font-size: 30px;
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ul{
+	color: white;
+	font-size: 30px;
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  padding-left: 100px;
+}
+body{
+	background: #111;
+	height: 100vh;
+}
+.wrapper span{
+	position: fixed;
+	bottom: -180px;
+	height: 50px;
+	width: 50px;
+	z-index: -1;
+	background-color: #18191f;
+	box-shadow: 0 0 50px #0072ff,
+	            0 0 100px #0072ff,
+	            0 0 150px #0072ff,
+	            0 0 200px #0072ff;
+	animation: animate 10s linear infinite;            
+}
+.wrapper span:nth-child(1){
+	left: 60px;
+	animation-delay: 0.6s;
+}
+.wrapper span:nth-child(2){
+	left: 10%;
+	animation-delay: 3s;
+	width: 60px;
+	height: 60px;
+}
+.wrapper span:nth-child(3){
+	left: 20%;
+	animation-delay: 2s;
+}
+.wrapper span:nth-child(4){
+	left: 30%;
+	animation-delay: 5s;
+	width: 80px;
+	height: 80px;
+}
+.wrapper span:nth-child(5){
+	left: 40%;
+	animation-delay: 1s;
+}
+.wrapper span:nth-child(6){
+	left: 50%;
+	animation-delay: 7s;
+}
+.wrapper span:nth-child(7){
+	left: 60%;
+	animation-delay: 6s;
+	width: 100px;
+	height: 100px;
+}
+.wrapper span:nth-child(8){
+	left: 70%;
+	animation-delay: 8s;
+}
+.wrapper span:nth-child(9){
+	left: 80%;
+	animation-delay: 6s;
+	width: 90px;
+	height: 90px;
+}
+.wrapper span:nth-child(10){
+	left: 90%;
+	animation-delay: 4s;
+}
+.banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.content h2 b{
+	-webkit-text-fill-color: tranparent;
+	-webkit-text-stroke-widht: 3px;
+	-webkit-text-stroke-color: #fff;
+	font-family: montserrat;
+	font-size: 80px;
+	text-transform: uppercase;
+	letter-spacing: 12px;
+}
+@keyframes animate{
+	0%{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	80%{
+		opacity: .7;
+	}
+	100%{
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 0;
+	}
 }
